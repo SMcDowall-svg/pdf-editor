@@ -37,7 +37,7 @@ if uploaded:
             }
 
 if "pdfs" in st.session_state and st.session_state.pdfs:
-    st.subheader("🔀 Reorder PDFs")
+    st.subheader("↔️ Reorder PDFs")
     pdf_order = sort_items(list(st.session_state.pdfs.keys()))
 
     for key in list(st.session_state.pdfs.keys()):
